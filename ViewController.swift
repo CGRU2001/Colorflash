@@ -11,6 +11,7 @@ import UIKit
 
 class ViewController: GenColor {
     
+    
     @IBOutlet weak var F1: UILabel!
     @IBOutlet weak var F2: UILabel!
     
@@ -32,13 +33,15 @@ class ViewController: GenColor {
     }
     
     @IBAction func changeColor(sender: UIButton){
-        
-        let color = GenColor()
-        view.backgroundColor = color.setColor();
-        sumarInstancia()
-        
+        color()
     }
     
+
+    func color(){
+        let color = GenColor.init()
+        view.backgroundColor = color.setColor();
+        sumarInstancia()
+    }
     func sumarInstancia(){
         instancias += 1
         F1.text = "Llevas " + String(instancias) + " instancias"
