@@ -1,6 +1,6 @@
 //
 //  GenColor.swift
-//  Colorific
+//  Colorflash
 //
 //  Created by Carlos Rodríguez on 10/12/2019.
 //  Copyright © 2019 Carlos Rodríguez. All rights reserved.

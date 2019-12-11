@@ -1,6 +1,7 @@
 //
 //  ViewController.swift
-//  Colorific
+//  Colorflash
+//  TODO change name
 //
 //  Created by Carlos Rodríguez on 10/12/2019.
 //  Copyright © 2019 Carlos Rodríguez. All rights reserved.
@@ -9,10 +10,6 @@
 import UIKit
 
 class ViewController: GenColor {
-
-    //private let r = CGFloat(arc4random()%255)
-    //private let g = CGFloat(arc4random()%255)
-    //private let b = CGFloat(arc4random()%255)
     
     @IBOutlet weak var F1: UILabel!
     @IBOutlet weak var F2: UILabel!
@@ -37,7 +34,6 @@ class ViewController: GenColor {
     @IBAction func changeColor(sender: UIButton){
         
         let color = GenColor()
-        
         view.backgroundColor = color.setColor();
         sumarInstancia()
         
