@@ -36,16 +36,6 @@ class ViewController: GenColor {
         color()
     }
     
-    @IBAction func epilepsy(){
-        for var i in 1...100{
-            let seconds = 1.0
-            self.color()
-            DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
-                i+=1
-            }
-            
-        }
-    }
     func color(){
         let color = GenColor.init()
         view.backgroundColor = color.setColor();
